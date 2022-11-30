@@ -32,8 +32,14 @@
             }
           
             heading.style = "background-color: pink";
+
         }  
-        
+      
+       function math ()
+       {
+        document.getElementById("demo").innerHTML = Math.PI;
+       }
+
     </script>
 </head>
 <body>
@@ -41,8 +47,8 @@
     <p>Name: </p><input id="textbox" type="text"><button onclick="hello();">Greet</button>
    
     <h5>This website uses a lot of Java Script Code! This way, it can be more interactive, making it, "Your Website."</h5>
-    <p id="demo">Now, tell me about yourself...</p>
-    <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me if you prefer larger text!</button>   
+    <!-- <p id="demo">Now, tell me about yourself...</p>
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me if you prefer larger text!</button>    -->
     
 <h3>Are you a:</h3>
 
@@ -55,14 +61,16 @@
     onclick="document.getElementById('myImage').src='https://www.freeiconspng.com/thumbs/dog-png/dog-png-30.png'">dog person</button>
 
     <h5>One of the most fundamental and common characteristics of any programming language is the ability to do mathematical calculations. Numbers are widely used in JavaScript for routine tasks like calculating the distance between items in a website content and determining the dimensions of the browser window. Two of the most frequent mathematical equations used in JavaScript are addition and subtraction.</h5>
-    <p>Math.PI returns the ratio of a circle's circumference to its diameter:</p>
+  
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "3.141592653589793!"'>Math.PI returns the ratio of a circle's circumference to its diameter:!</button>
+    <p id="demo">PI</p>
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me if you prefer larger text!</button>
+  
+    <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">Comments/feedback on website</label>
+      </div>
 
-    <p id="demo"></p>
-    
-    <script>
-    document.getElementById("demo").innerHTML = Math.PI;
-    </script>
-    
 
 </body>
 </html>
